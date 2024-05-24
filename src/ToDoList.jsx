@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import ClickerButton from './ClickerButton.jsx'
 import './index.css'
 
 
@@ -45,6 +46,7 @@ function ToDoList(){
     }
  
     return (
+        <>
         <div className="to-do-list">
             <h1>Sophie's To-Do-List</h1>
 
@@ -81,10 +83,15 @@ function ToDoList(){
                         Move Down
                     </button>
                 </li>
+                
             )}
         </ol>
+        <ClickerButton />
         </div>
+        
         </div>
+        
+    </>
     );
 
 };
